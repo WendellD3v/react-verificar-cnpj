@@ -103,7 +103,7 @@ function Home(){
                                 </>
                             )}                            
                             <p>C-NAE</p>
-                            <span id='CNAE'>{result.estabelecimento.atividade_principal.classe} - ${result.estabelecimento.atividade_principal.descricao}</span>
+                            <span id='CNAE'>{result.estabelecimento.atividade_principal.classe} - {result.estabelecimento.atividade_principal.descricao}</span>
                             <button id='copiar' onClick={copiarCNAE}><img src={copy} width = '30'/> Copiar</button>
                         </div>
                     )
