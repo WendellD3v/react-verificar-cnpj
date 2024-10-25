@@ -158,6 +158,7 @@ function Home(){
                         type="text" 
                         name="CNPJ" 
                         id="cnpjDigitado"
+                        autoComplete='off'
                         value={cnpj}
                         onChange={(e) => {
                             formatarInput(e.target.value);
