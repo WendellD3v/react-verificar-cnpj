@@ -93,11 +93,15 @@ function Home(){
                             <button id='copiar' onClick={copiarNOME}><img src={copy} width = '30'/> Copiar</button>
                             <br />
                             <br />
-                            <p>Nome Fantasia</p>
-                            <span id='NomeF'>{result.estabelecimento.nome_fantasia}</span>
-                            <button id='copiar' onClick={copiarNOMEF}><img src={copy} width = '30'/> Copiar</button>
-                            <br />
-                            <br />
+                            {result.estabelecimento.nome_fantasia && (
+                                <>
+                                    <p>Nome Fantasia</p>
+                                    <span id='NomeF'>{result.estabelecimento.nome_fantasia}</span>
+                                    <button id='copiar' onClick={copiarNOMEF}><img src={copy} width = '30'/> Copiar</button>
+                                    <br />
+                                    <br />
+                                </>
+                            )}                            
                             <p>C-NAE</p>
                             <span id='CNAE'>{result.estabelecimento.atividade_principal.classe} - ${result.estabelecimento.atividade_principal.descricao}</span>
                             <button id='copiar' onClick={copiarCNAE}><img src={copy} width = '30'/> Copiar</button>
