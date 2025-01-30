@@ -310,6 +310,7 @@ function App() {
               type="text" 
               name="CNPJ" 
               id="cnpjDigitado" 
+              autoComplete='off'
               value={CNPJ}
               onChange={(e) => {
                 formatarInput(e.target.value)
